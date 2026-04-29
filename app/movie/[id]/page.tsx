@@ -96,12 +96,13 @@ export default function MovieDetailPage() {
         <Header />
         <div className="flex flex-col items-center justify-center min-h-[60vh] gap-4">
           <p className="text-muted-foreground">Movie not found</p>
+          <p className="text-sm text-muted-foreground">This movie doesn&apos;t exist or has been removed.</p>
           <button
-            onClick={() => router.back()}
+            onClick={() => router.push("/")}
             className="flex items-center gap-2 text-primary hover:underline"
           >
             <ArrowLeft className="w-4 h-4" />
-            Go back
+            Return to Home
           </button>
         </div>
       </div>
